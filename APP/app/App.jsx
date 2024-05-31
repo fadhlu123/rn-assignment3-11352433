@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet,Image } from 'react-native'
+import { View, Text, StyleSheet,Image,ScrollView } from 'react-native'
 import React from 'react'
 
  export default function App ()  {
@@ -6,7 +6,7 @@ import React from 'react'
     <View style={styles.container}>
       <View style={styles.container2}>
         <View style={styles.container3}>
-          <Text style={styles.text1}>Hello, Devs</Text>
+          <Text style={styles.text1}>Hello, Wadon</Text>
           <Text style={styles.text2}>14 tasks today</Text>
         </View>
         <View style={styles.container4}>
@@ -39,7 +39,56 @@ import React from 'react'
           <Image style={styles.image5}source={require('../assets/images/young woman working at desk.png')}/>
         </View>
        </View>
-
+       <View style={styles.ongoing}>
+        <Text style={styles.tex9}>Ongoing</Text>
+       </View>
+       <ScrollView>
+       <View style={styles.mobile}>
+        <Text style={styles.text10}>Mobile App Development</Text>
+       </View>
+       <View style={styles.mobile}>
+        <Text style={styles.text10}>Web Developmemt</Text>
+       </View>
+       <View style={styles.mobile}>
+        <Text style={styles.text10}>Software Engineering</Text>
+       </View>
+       <View style={styles.mobile}>
+        <Text style={styles.text10}>System Administration</Text>
+       </View>
+       <View style={styles.mobile}>
+        <Text style={styles.text10}>Data Structure and Algorithms</Text>
+       </View>
+       <View style={styles.mobile}>
+        <Text style={styles.text10}>Information and Data Modelling</Text>
+       </View>
+       <View style={styles.mobile}>
+        <Text style={styles.text10}>Africa and Diaspora</Text>
+       </View>
+       <View style={styles.mobile}>
+        <Text style={styles.text10}>Programming</Text>
+       </View>
+       <View style={styles.mobile}>
+        <Text style={styles.text10}>Push Ups</Text>
+       </View>
+       <View style={styles.mobile}>
+        <Text style={styles.text10}>Backend</Text>
+       </View>
+       <View style={styles.mobile}>
+        <Text style={styles.text10}>Frontend</Text>
+       </View>
+       <View style={styles.mobile}>
+        <Text style={styles.text10}>Landing Page</Text>
+       </View>
+       <View style={styles.mobile}>
+        <Text style={styles.text10}>Prompt</Text>
+       </View>
+       <View style={styles.mobile}>
+        <Text style={styles.text10}>App Development</Text>
+       </View>
+       <View style={styles.mobile}>
+        <Text style={styles.text10}>Cybersecurity</Text>
+       </View>
+       </ScrollView>
     </View>
   )
  }
@@ -169,6 +218,7 @@ exercise2:{
   height:192,
   borderRadius:15,
   backgroundColor:'white',
+  marginLeft:25,
 },
 text7:{
   fontSize:16,
@@ -190,4 +240,31 @@ image5:{
   top:9,
   left:33,
 },
+ongoing:{
+  marginTop:20,
+  marginLeft:17,
+},
+text9:{
+  fontStyle:20,
+  fontWeight:700,
+  lineHeight:24,
+},
+mobile:{
+  width:354,
+  height:128,
+  borderRadius:15,
+  backgroundColor:'#FBF9F7',
+  top:20,
+  left:15,
+  marginBottom:20,
+},
+text10:{
+ fontSize:16,
+ fontWeight:700,
+ lineHeight:19.2,
+ top:45,
+ left:12, 
+}
+
+
 })
