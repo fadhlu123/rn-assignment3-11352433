@@ -24,6 +24,22 @@ import React from 'react'
           </View>
           <View style={styles.stage3}><Image style={styles.image3}source={require('../assets/images/Filter.png')}/></View>
        </View>
+       <View style={styles.category }>
+        <Text style={styles.text4}>Categories</Text>
+       </View>
+       <View style={styles.exercise}>
+        <View style={styles.exercise1}>
+          <Text style={styles.text5}>Exercise</Text>
+          <Text style={styles.text6}>12 Tasks</Text>
+          <Image style={styles.image4}source={require('../assets/images/young woman working online.png')}/>
+        </View>
+        <View style={styles.exercise2}>
+          <Text style={styles.text7}>Study</Text>
+          <Text style={styles.text8}>12 Tasks</Text>
+          <Image style={styles.image5}source={require('../assets/images/young woman working at desk.png')}/>
+        </View>
+       </View>
+
     </View>
   )
  }
@@ -104,5 +120,74 @@ image2:{
 text3:{
   marginTop:4,
   marginRight:4,
-}
+},
+category:{
+  marginTop:17,
+  marginLeft:20
+},
+text4:{
+  fontSize:20,
+  fontWeight:700,
+  lineHeight:24,
+},
+exercise:{
+  width:396,
+  height:192,
+  flexDirection:'row',
+  justifyContent:'space-between',
+  marginTop:17,
+},
+exercise1:{
+  width:186,
+  height:192,
+  borderRadius:15,
+  backgroundColor: '#FBF9F7',
+  marginLeft:20,
+},
+text5:{
+  fontWeight:700,
+  fontSize:16,
+  lineHeight:19.2,
+  top:10,
+  left:12,
+},
+text6:{
+  fontSize:12,
+  fontWeight:400,
+  lineHeight:14.4,
+  top:9,
+  left:12,
+},
+image4:{
+  width:151,
+  height:132,
+  top:5,
+  left:14,
+},
+exercise2:{
+  width:186,
+  height:192,
+  borderRadius:15,
+  backgroundColor:'white',
+},
+text7:{
+  fontSize:16,
+  fontWeight:700,
+  lineHeight:19.2,
+  top:10,
+  left:12,
+},
+text8:{
+    fontSize:12,
+    fontWeight:400,
+    lineHeight:14.4,
+    top:9,
+    left:12,
+},
+image5:{
+  width:151,
+  height:132,
+  top:9,
+  left:33,
+},
 })
